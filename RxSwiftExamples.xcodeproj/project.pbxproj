@@ -56,10 +56,10 @@
 		AE83A8001EDEB55600A4028F = {
 			isa = PBXGroup;
 			children = (
-				AE83A80B1EDEB55600A4028F /* RxSwiftExamples */,
-				AE83A80A1EDEB55600A4028F /* Products */,
-				20C5652CC3B749596C5CDCBA /* Pods */,
 				BD90466BD64C64C72A7017A6 /* Frameworks */,
+				20C5652CC3B749596C5CDCBA /* Pods */,
+				AE83A80A1EDEB55600A4028F /* Products */,
+				AE83A80B1EDEB55600A4028F /* RxSwiftExamples */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,13 +74,13 @@
 		AE83A80B1EDEB55600A4028F /* RxSwiftExamples */ = {
 			isa = PBXGroup;
 			children = (
-				AEC2CD271EE12B7A0029BB93 /* ViewController.swift */,
-				AE83A80C1EDEB55600A4028F /* AppDelegate.swift */,
 				AEC2CD211EE120680029BB93 /* Adding Numbers */,
-				AE83A8101EDEB55600A4028F /* Main.storyboard */,
+				AE83A80C1EDEB55600A4028F /* AppDelegate.swift */,
 				AE83A8131EDEB55600A4028F /* Assets.xcassets */,
-				AE83A8151EDEB55600A4028F /* LaunchScreen.storyboard */,
 				AE83A8181EDEB55600A4028F /* Info.plist */,
+				AE83A8151EDEB55600A4028F /* LaunchScreen.storyboard */,
+				AE83A8101EDEB55600A4028F /* Main.storyboard */,
+				AEC2CD271EE12B7A0029BB93 /* ViewController.swift */,
 			);
 			path = RxSwiftExamples;
 			sourceTree = "<group>";
@@ -92,6 +92,7 @@
 				AEC2CD241EE1210B0029BB93 /* AddingNumbersViewController.swift */,
 			);
 			name = "Adding Numbers";
+			path = "Adding Numbers";
 			sourceTree = "<group>";
 		};
 		BD90466BD64C64C72A7017A6 /* Frameworks */ = {
@@ -241,6 +242,7 @@
 				AE83A8111EDEB55600A4028F /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		AE83A8151EDEB55600A4028F /* LaunchScreen.storyboard */ = {
@@ -249,6 +251,7 @@
 				AE83A8161EDEB55600A4028F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
