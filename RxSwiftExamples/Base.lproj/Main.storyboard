@@ -65,7 +65,22 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ylx-0C-Ide" id="81h-1x-oa9">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SimpleValidation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LF9-pW-dOE">
+                                                    <rect key="frame" x="25" y="11" width="126" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="LF9-pW-dOE" firstAttribute="centerY" secondItem="81h-1x-oa9" secondAttribute="centerY" id="Lqc-fP-eb9"/>
+                                                <constraint firstItem="LF9-pW-dOE" firstAttribute="leading" secondItem="81h-1x-oa9" secondAttribute="leading" constant="25" id="ZuW-I0-SW0"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="nhU-1l-lem" kind="show" id="1uX-cO-dIX"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3WU-wv-K1z">
                                         <rect key="frame" x="0.0" y="143.5" width="375" height="44"/>
@@ -160,6 +175,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sBR-vQ-LLe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1083" y="19"/>
+        </scene>
+        <!--SimpleValidation-->
+        <scene sceneID="js1-Ux-Xue">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SimpleValidation" id="nhU-1l-lem" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aKT-SG-NVr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1097" y="57"/>
         </scene>
     </scenes>
 </document>
