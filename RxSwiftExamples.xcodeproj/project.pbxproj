@@ -90,14 +90,14 @@
 		AE83A80B1EDEB55600A4028F /* RxSwiftExamples */ = {
 			isa = PBXGroup;
 			children = (
-				AE83A8131EDEB55600A4028F /* Assets.xcassets */,
 				AEC2CD211EE120680029BB93 /* Adding Numbers */,
-				AEC8DFCF1EE55D7C00E3FE52 /* SimpleValidation */,
+				AEC6FA561EFA5880009FEC1F /* Extensions */,
 				AEC6FA4D1EFA4886009FEC1F /* Geolocation */,
 				AEC6FA521EFA4F7B009FEC1F /* Services */,
-				AEC6FA561EFA5880009FEC1F /* Extensions */,
-				AEC6FA5E1EFA5A1D009FEC1F /* iOS */,
+				AEC8DFCF1EE55D7C00E3FE52 /* SimpleValidation */,
 				AEC6FA5D1EFA5A02009FEC1F /* Supporting Files */,
+				AEC6FA5E1EFA5A1D009FEC1F /* iOS */,
+				AE83A8131EDEB55600A4028F /* Assets.xcassets */,
 			);
 			path = RxSwiftExamples;
 			sourceTree = "<group>";
@@ -114,10 +114,11 @@
 		AEC6FA4D1EFA4886009FEC1F /* Geolocation */ = {
 			isa = PBXGroup;
 			children = (
-				AEC6FA4E1EFA48D0009FEC1F /* GeolocationViewController.swift */,
 				AEC6FA501EFA48E0009FEC1F /* Geolocation.storyboard */,
+				AEC6FA4E1EFA48D0009FEC1F /* GeolocationViewController.swift */,
 			);
 			name = Geolocation;
+			path = Geolocation;
 			sourceTree = "<group>";
 		};
 		AEC6FA521EFA4F7B009FEC1F /* Services */ = {
@@ -126,6 +127,7 @@
 				AEC6FA531EFA4FAE009FEC1F /* GeolocationService.swift */,
 			);
 			name = Services;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		AEC6FA561EFA5880009FEC1F /* Extensions */ = {
@@ -135,6 +137,7 @@
 				AEC6FA5A1EFA597F009FEC1F /* RxCLLocationManagerDelegateProxy.swift */,
 			);
 			name = Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		AEC6FA5D1EFA5A02009FEC1F /* Supporting Files */ = {
@@ -143,27 +146,30 @@
 				AE83A8181EDEB55600A4028F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		AEC6FA5E1EFA5A1D009FEC1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				AEC6FA5F1EFA5A5E009FEC1F /* RootViewController.swift */,
+				AE83A80C1EDEB55600A4028F /* AppDelegate.swift */,
 				AE83A8151EDEB55600A4028F /* LaunchScreen.storyboard */,
 				AE83A8101EDEB55600A4028F /* Main.storyboard */,
+				AEC6FA5F1EFA5A5E009FEC1F /* RootViewController.swift */,
 				AEC2CD271EE12B7A0029BB93 /* ViewController.swift */,
-				AE83A80C1EDEB55600A4028F /* AppDelegate.swift */,
 			);
 			name = iOS;
+			path = iOS;
 			sourceTree = "<group>";
 		};
 		AEC8DFCF1EE55D7C00E3FE52 /* SimpleValidation */ = {
 			isa = PBXGroup;
 			children = (
-				AEC8DFD01EE55DB700E3FE52 /* SimpleValidationViewController.swift */,
 				AEC8DFCD1EE55D6A00E3FE52 /* SimpleValidation.storyboard */,
+				AEC8DFD01EE55DB700E3FE52 /* SimpleValidationViewController.swift */,
 			);
 			name = SimpleValidation;
+			path = SimpleValidation;
 			sourceTree = "<group>";
 		};
 		BD90466BD64C64C72A7017A6 /* Frameworks */ = {
@@ -436,7 +442,7 @@
 			baseConfigurationReference = EE755500695846257F5463AF /* Pods-RxSwiftExamples.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = RxSwiftExamples/Info.plist;
+				INFOPLIST_FILE = "RxSwiftExamples/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yokurin.RxSwiftExamples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -449,7 +455,7 @@
 			baseConfigurationReference = B7738C5FD89662CB76102830 /* Pods-RxSwiftExamples.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = RxSwiftExamples/Info.plist;
+				INFOPLIST_FILE = "RxSwiftExamples/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yokurin.RxSwiftExamples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
