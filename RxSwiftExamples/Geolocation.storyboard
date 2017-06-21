@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gpy-3d-1UV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Geolocation View Controller-->
+        <scene sceneID="ggi-zL-apY">
+            <objects>
+                <viewController id="gpy-3d-1UV" customClass="GeolocationViewController" customModule="RxSwiftExamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aXQ-oO-4vb"/>
+                        <viewControllerLayoutGuide type="bottom" id="EYI-US-azj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vi7-lq-Rqq">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r3c-h4-8jV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mro-1f-99n">
+                                        <rect key="frame" x="166" y="211" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fC3-ar-NPJ">
+                                        <rect key="frame" x="96" y="150" width="183.5" height="41"/>
+                                        <string key="text">It seems that
+geolocation is enabled</string>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can disable Geolocation on app's preferences and come back to the app to see what happens" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8M-Sx-Vo0">
+                                        <rect key="frame" x="87" y="252" width="200" height="46.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="bnu-AP-dCc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGx-jo-cAD">
+                                        <rect key="frame" x="87" y="318.5" width="200" height="28"/>
+                                        <color key="backgroundColor" red="0.17483745810000001" green="0.60840499159999994" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="oOS-cC-MNi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                                        <state key="normal" title="OPEN APP PREFERENCES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="d8M-Sx-Vo0" firstAttribute="centerX" secondItem="r3c-h4-8jV" secondAttribute="centerX" id="H62-hZ-1z5"/>
+                                    <constraint firstItem="d8M-Sx-Vo0" firstAttribute="top" secondItem="mro-1f-99n" secondAttribute="bottom" constant="20" id="LV5-LT-F3x"/>
+                                    <constraint firstItem="mro-1f-99n" firstAttribute="centerX" secondItem="r3c-h4-8jV" secondAttribute="centerX" id="LpB-4h-Zku"/>
+                                    <constraint firstItem="TGx-jo-cAD" firstAttribute="centerX" secondItem="r3c-h4-8jV" secondAttribute="centerX" id="MBQ-0g-wNF"/>
+                                    <constraint firstItem="TGx-jo-cAD" firstAttribute="top" secondItem="d8M-Sx-Vo0" secondAttribute="bottom" constant="20" id="Snv-FA-JCB"/>
+                                    <constraint firstItem="mro-1f-99n" firstAttribute="centerY" secondItem="r3c-h4-8jV" secondAttribute="centerY" constant="-80" id="baY-nk-VnA"/>
+                                    <constraint firstItem="mro-1f-99n" firstAttribute="top" secondItem="fC3-ar-NPJ" secondAttribute="bottom" constant="20" id="gkc-pP-z8d"/>
+                                    <constraint firstItem="fC3-ar-NPJ" firstAttribute="centerX" secondItem="r3c-h4-8jV" secondAttribute="centerX" id="nps-F0-IWO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EYI-US-azj" firstAttribute="top" secondItem="r3c-h4-8jV" secondAttribute="bottom" id="4W5-PL-Cpe"/>
+                            <constraint firstItem="r3c-h4-8jV" firstAttribute="top" secondItem="aXQ-oO-4vb" secondAttribute="bottom" id="BkK-hn-DEZ"/>
+                            <constraint firstItem="r3c-h4-8jV" firstAttribute="leading" secondItem="Vi7-lq-Rqq" secondAttribute="leading" id="bz3-Qq-H2u"/>
+                            <constraint firstAttribute="trailing" secondItem="r3c-h4-8jV" secondAttribute="trailing" id="feD-r7-vac"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zXJ-Te-wjb"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="button" destination="GCo-ff-dmr" id="ENf-9x-BwB"/>
+                        <outlet property="button2" destination="TGx-jo-cAD" id="fq3-8r-RT4"/>
+                        <outlet property="label" destination="mro-1f-99n" id="HZT-Wh-jLc"/>
+                        <outlet property="noGeoLocationView" destination="y2c-jm-eiA" id="RQX-cj-Lle"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vsr-Gm-suh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="y2c-jm-eiA">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Geolocation is not enabled for this app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85p-LI-Jb4">
+                            <rect key="frame" x="48" y="168.5" width="280" height="67.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="280" id="hkt-5S-g6b"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                            <color key="textColor" red="0.94901960780000005" green="0.32549019610000002" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enable it in the app preferences" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHl-yu-pnm">
+                            <rect key="frame" x="48" y="244" width="280" height="42.5"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCo-ff-dmr">
+                            <rect key="frame" x="88" y="316.5" width="200" height="28"/>
+                            <color key="backgroundColor" red="0.17483745810000001" green="0.60840499159999994" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="200" id="bvw-13-uBL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                            <state key="normal" title="OPEN APP PREFERENCES"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="GCo-ff-dmr" firstAttribute="centerX" secondItem="y2c-jm-eiA" secondAttribute="centerX" id="3qe-35-qfA"/>
+                        <constraint firstItem="GCo-ff-dmr" firstAttribute="top" secondItem="bHl-yu-pnm" secondAttribute="bottom" constant="30" id="92N-Vo-leS"/>
+                        <constraint firstItem="bHl-yu-pnm" firstAttribute="centerX" secondItem="y2c-jm-eiA" secondAttribute="centerX" id="Oyt-3z-USo"/>
+                        <constraint firstItem="bHl-yu-pnm" firstAttribute="width" secondItem="85p-LI-Jb4" secondAttribute="width" id="PES-pB-5WJ"/>
+                        <constraint firstItem="bHl-yu-pnm" firstAttribute="top" secondItem="85p-LI-Jb4" secondAttribute="bottom" constant="8" id="VFa-Ex-9Ex"/>
+                        <constraint firstItem="85p-LI-Jb4" firstAttribute="centerY" secondItem="y2c-jm-eiA" secondAttribute="centerY" constant="-100" id="c0x-Va-Xhn"/>
+                        <constraint firstItem="85p-LI-Jb4" firstAttribute="centerX" secondItem="y2c-jm-eiA" secondAttribute="centerX" id="iDV-MO-BAL"/>
+                    </constraints>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="-7" y="-9"/>
+        </scene>
+    </scenes>
+</document>

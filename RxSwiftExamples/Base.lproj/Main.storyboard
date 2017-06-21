@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="-263" y="193"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Root View Controller-->
         <scene sceneID="wQg-Et-Ori">
             <objects>
-                <tableViewController id="uum-i3-qi4" sceneMemberID="viewController">
+                <tableViewController id="uum-i3-qi4" customClass="RootViewController" customModule="RxSwiftExamples" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="vAu-xj-tF7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,7 +88,22 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3WU-wv-K1z" id="qsQ-ZS-Hjr">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Geolocation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Hx-DJ-PNt">
+                                                    <rect key="frame" x="25" y="11.5" width="92" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7Hx-DJ-PNt" firstAttribute="centerY" secondItem="qsQ-ZS-Hjr" secondAttribute="centerY" id="Rt1-k4-FcJ"/>
+                                                <constraint firstItem="7Hx-DJ-PNt" firstAttribute="leading" secondItem="qsQ-ZS-Hjr" secondAttribute="leading" constant="25" id="SX6-HU-uGP"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="BQD-Lr-x5C" kind="show" id="Tpc-ky-WPh"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="GCl-nu-fKZ">
                                         <rect key="frame" x="0.0" y="187.5" width="375" height="44"/>
@@ -182,7 +197,15 @@
                 <viewControllerPlaceholder storyboardName="SimpleValidation" id="nhU-1l-lem" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aKT-SG-NVr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1097" y="57"/>
+            <point key="canvasLocation" x="1084" y="57"/>
+        </scene>
+        <!--Geolocation-->
+        <scene sceneID="mIa-KZ-TtD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Geolocation" id="BQD-Lr-x5C" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ljr-AW-SG9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1062" y="96"/>
         </scene>
     </scenes>
 </document>

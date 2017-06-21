@@ -14,6 +14,12 @@
 		AEC2CD231EE120EC0029BB93 /* AddingNumbers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC2CD221EE120EC0029BB93 /* AddingNumbers.storyboard */; };
 		AEC2CD251EE1210B0029BB93 /* AddingNumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC2CD241EE1210B0029BB93 /* AddingNumbersViewController.swift */; };
 		AEC2CD281EE12B7A0029BB93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC2CD271EE12B7A0029BB93 /* ViewController.swift */; };
+		AEC6FA4F1EFA48D0009FEC1F /* GeolocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC6FA4E1EFA48D0009FEC1F /* GeolocationViewController.swift */; };
+		AEC6FA511EFA48E0009FEC1F /* Geolocation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC6FA501EFA48E0009FEC1F /* Geolocation.storyboard */; };
+		AEC6FA541EFA4FAE009FEC1F /* GeolocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC6FA531EFA4FAE009FEC1F /* GeolocationService.swift */; };
+		AEC6FA5B1EFA597F009FEC1F /* CLLocationManager+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC6FA591EFA597F009FEC1F /* CLLocationManager+Rx.swift */; };
+		AEC6FA5C1EFA597F009FEC1F /* RxCLLocationManagerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC6FA5A1EFA597F009FEC1F /* RxCLLocationManagerDelegateProxy.swift */; };
+		AEC6FA601EFA5A5E009FEC1F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC6FA5F1EFA5A5E009FEC1F /* RootViewController.swift */; };
 		AEC8DFCE1EE55D6A00E3FE52 /* SimpleValidation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC8DFCD1EE55D6A00E3FE52 /* SimpleValidation.storyboard */; };
 		AEC8DFD11EE55DB700E3FE52 /* SimpleValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC8DFD01EE55DB700E3FE52 /* SimpleValidationViewController.swift */; };
 		D0BF88E9CB66BAC311CAF531 /* Pods_RxSwiftExamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4355FE872FB176F3EF1E3422 /* Pods_RxSwiftExamples.framework */; };
@@ -30,6 +36,12 @@
 		AEC2CD221EE120EC0029BB93 /* AddingNumbers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddingNumbers.storyboard; sourceTree = "<group>"; };
 		AEC2CD241EE1210B0029BB93 /* AddingNumbersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddingNumbersViewController.swift; sourceTree = "<group>"; };
 		AEC2CD271EE12B7A0029BB93 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AEC6FA4E1EFA48D0009FEC1F /* GeolocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeolocationViewController.swift; sourceTree = "<group>"; };
+		AEC6FA501EFA48E0009FEC1F /* Geolocation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Geolocation.storyboard; sourceTree = "<group>"; };
+		AEC6FA531EFA4FAE009FEC1F /* GeolocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeolocationService.swift; sourceTree = "<group>"; };
+		AEC6FA591EFA597F009FEC1F /* CLLocationManager+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationManager+Rx.swift"; sourceTree = "<group>"; };
+		AEC6FA5A1EFA597F009FEC1F /* RxCLLocationManagerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxCLLocationManagerDelegateProxy.swift; sourceTree = "<group>"; };
+		AEC6FA5F1EFA5A5E009FEC1F /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		AEC8DFCD1EE55D6A00E3FE52 /* SimpleValidation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SimpleValidation.storyboard; sourceTree = "<group>"; };
 		AEC8DFD01EE55DB700E3FE52 /* SimpleValidationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleValidationViewController.swift; sourceTree = "<group>"; };
 		B7738C5FD89662CB76102830 /* Pods-RxSwiftExamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftExamples.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftExamples/Pods-RxSwiftExamples.release.xcconfig"; sourceTree = "<group>"; };
@@ -78,14 +90,14 @@
 		AE83A80B1EDEB55600A4028F /* RxSwiftExamples */ = {
 			isa = PBXGroup;
 			children = (
-				AEC8DFCF1EE55D7C00E3FE52 /* SimpleValidation */,
-				AEC2CD211EE120680029BB93 /* Adding Numbers */,
-				AE83A80C1EDEB55600A4028F /* AppDelegate.swift */,
 				AE83A8131EDEB55600A4028F /* Assets.xcassets */,
-				AE83A8181EDEB55600A4028F /* Info.plist */,
-				AE83A8151EDEB55600A4028F /* LaunchScreen.storyboard */,
-				AE83A8101EDEB55600A4028F /* Main.storyboard */,
-				AEC2CD271EE12B7A0029BB93 /* ViewController.swift */,
+				AEC2CD211EE120680029BB93 /* Adding Numbers */,
+				AEC8DFCF1EE55D7C00E3FE52 /* SimpleValidation */,
+				AEC6FA4D1EFA4886009FEC1F /* Geolocation */,
+				AEC6FA521EFA4F7B009FEC1F /* Services */,
+				AEC6FA561EFA5880009FEC1F /* Extensions */,
+				AEC6FA5E1EFA5A1D009FEC1F /* iOS */,
+				AEC6FA5D1EFA5A02009FEC1F /* Supporting Files */,
 			);
 			path = RxSwiftExamples;
 			sourceTree = "<group>";
@@ -97,6 +109,52 @@
 				AEC2CD241EE1210B0029BB93 /* AddingNumbersViewController.swift */,
 			);
 			path = "Adding Numbers";
+			sourceTree = "<group>";
+		};
+		AEC6FA4D1EFA4886009FEC1F /* Geolocation */ = {
+			isa = PBXGroup;
+			children = (
+				AEC6FA4E1EFA48D0009FEC1F /* GeolocationViewController.swift */,
+				AEC6FA501EFA48E0009FEC1F /* Geolocation.storyboard */,
+			);
+			name = Geolocation;
+			sourceTree = "<group>";
+		};
+		AEC6FA521EFA4F7B009FEC1F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AEC6FA531EFA4FAE009FEC1F /* GeolocationService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		AEC6FA561EFA5880009FEC1F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AEC6FA591EFA597F009FEC1F /* CLLocationManager+Rx.swift */,
+				AEC6FA5A1EFA597F009FEC1F /* RxCLLocationManagerDelegateProxy.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		AEC6FA5D1EFA5A02009FEC1F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE83A8181EDEB55600A4028F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AEC6FA5E1EFA5A1D009FEC1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AEC6FA5F1EFA5A5E009FEC1F /* RootViewController.swift */,
+				AE83A8151EDEB55600A4028F /* LaunchScreen.storyboard */,
+				AE83A8101EDEB55600A4028F /* Main.storyboard */,
+				AEC2CD271EE12B7A0029BB93 /* ViewController.swift */,
+				AE83A80C1EDEB55600A4028F /* AppDelegate.swift */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		AEC8DFCF1EE55D7C00E3FE52 /* SimpleValidation */ = {
@@ -179,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE83A8171EDEB55600A4028F /* LaunchScreen.storyboard in Resources */,
+				AEC6FA511EFA48E0009FEC1F /* Geolocation.storyboard in Resources */,
 				AEC8DFCE1EE55D6A00E3FE52 /* SimpleValidation.storyboard in Resources */,
 				AE83A8141EDEB55600A4028F /* Assets.xcassets in Resources */,
 				AEC2CD231EE120EC0029BB93 /* AddingNumbers.storyboard in Resources */,
@@ -241,6 +300,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEC6FA541EFA4FAE009FEC1F /* GeolocationService.swift in Sources */,
+				AEC6FA4F1EFA48D0009FEC1F /* GeolocationViewController.swift in Sources */,
+				AEC6FA601EFA5A5E009FEC1F /* RootViewController.swift in Sources */,
+				AEC6FA5B1EFA597F009FEC1F /* CLLocationManager+Rx.swift in Sources */,
+				AEC6FA5C1EFA597F009FEC1F /* RxCLLocationManagerDelegateProxy.swift in Sources */,
 				AEC2CD281EE12B7A0029BB93 /* ViewController.swift in Sources */,
 				AEC2CD251EE1210B0029BB93 /* AddingNumbersViewController.swift in Sources */,
 				AE83A80D1EDEB55600A4028F /* AppDelegate.swift in Sources */,
